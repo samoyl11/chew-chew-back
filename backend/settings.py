@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = (
-    'http://chew-chew-front.samoyl11.now.sh',
+    'https://chew-chew-front.samoyl11.now.sh',
 )
 
 ROOT_URLCONF = 'backend.urls'
