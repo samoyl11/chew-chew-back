@@ -1,9 +1,9 @@
 from django.db import models
 
 class Form(models.Model):
-    title = models.CharField(max_length=120)
-    description = models.TextField()
-    completed = models.BooleanField(default=False)
+    firstName = models.CharField(max_length=120)
+    lastName = models.CharField(max_length=120)
+    telephone = models.CharField(max_length=120)
 
     def _str_(self):
-        return self.title
+        return self.telephone
