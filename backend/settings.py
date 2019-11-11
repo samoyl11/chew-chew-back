@@ -121,7 +121,7 @@ USE_L10N = True
 USE_TZ = True
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 465
+EMAIL_PORT = 587
 EMAIL_HOST_USER = 'test4sendingresults@gmail.com'
 EMAIL_HOST_PASSWORD = '9250087828'
 EMAIL_USE_TLS = True
