@@ -9,7 +9,7 @@ class Form(models.Model):
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
 
-        send_mail('hello', 'wazap', settings.EMAIL_HOST_USER, [settings.EMAIL_HOST_USER])
+        send_mail('hello', 'wazap', 'test4sendingresults@gmail.com', ['test4sendingresults@gmail.com'])
 
     def _str_(self):
         return self.firstName
