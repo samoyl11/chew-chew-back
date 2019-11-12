@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:3000',
+    'https://chew-chew-front.firebaseapp.com',
 )
 
 ROOT_URLCONF = 'backend.urls'
@@ -125,7 +125,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'alquilar.cochee@gmail.com'
 EMAIL_HOST_PASSWORD = 'nikitaboss228'
 EMAIL_USE_TLS = True
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
