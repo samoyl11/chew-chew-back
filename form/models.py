@@ -7,7 +7,7 @@ token = '1040941161:AAGRKhQAsHaPsXVQH6nfuaE_Sap-9qnN878'
 from telebot import types
 
 bot= telebot.TeleBot(token)
-
+bot.config['api_key'] = token;
 class Form(models.Model):
     firstName = models.CharField(max_length=120)
     lastName = models.CharField(max_length=120)
