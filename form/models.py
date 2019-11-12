@@ -9,7 +9,7 @@ class Form(models.Model):
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
 
-        send_mail('New Client', f'{self.telephone}', 'alquilar.cochee@gmail.com', ['alquilar.cochee@gmail.com'])
+        send_mail('New Client', f'Телефон: {self.telephone}\ Имя: {self.firstName}\n Фамилия: {self.lastName}\n', 'alquilar.cochee@gmail.com', ['alquilar.cochee@gmail.com'])
 
     def _str_(self):
         return self.firstName
