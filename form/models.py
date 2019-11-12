@@ -19,6 +19,7 @@ class Form(models.Model):
         #send_mail('New Client', f'Телефон: {self.telephone}\n Имя: {self.firstName}\n Фамилия: {self.lastName}\n', 'alquilar.cochee@gmail.com', ['alquilar.cochee@gmail.com'])
 
         bot.send_message(chat_id='270129913', text="Новый клиент: имя: {} {}, телефон: {}".format(self.firstName, self.lastName, self.telephone))
+        print(bot.send_message(chat_id='270129913', text="Новый клиент: имя: {} {}, телефон: {}".format(self.firstName, self.lastName, self.telephone)))
         print('sent????')
         bot.send_message(chat_id='251780463', text="Новый клиент: имя: {} {}, телефон: {}".format(self.firstName, self.lastName, self.telephone))
         bot.send_message(chat_id='309350089', text="Новый клиент: имя: {} {}, телефон: {}".format(self.firstName, self.lastName, self.telephone))
