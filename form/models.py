@@ -17,10 +17,10 @@ class Form(models.Model):
         super().save(*args, **kwargs)
 
         #send_mail('New Client', f'Телефон: {self.telephone}\n Имя: {self.firstName}\n Фамилия: {self.lastName}\n', 'alquilar.cochee@gmail.com', ['alquilar.cochee@gmail.com'])
-
-        bot.send_message(chat_id='270129913', text="Новый клиент: имя: {} {}, телефон: {}".format(self.firstName, self.lastName, self.telephone))
-        bot.send_message(chat_id='251780463', text="Новый клиент: имя: {} {}, телефон: {}".format(self.firstName, self.lastName, self.telephone))
-        bot.send_message(chat_id='309350089', text="Новый клиент: имя: {} {}, телефон: {}".format(self.firstName, self.lastName, self.telephone))
-        bot.send_message(chat_id='-368201757', text="Новый клиент: имя: {} {}, телефон: {}".format(self.firstName, self.lastName, self.telephone))
+        str = "Новый клиент.\n Имя: {} {}\n Телефон: {}".format(self.firstName, self.lastName, self.telephone)
+        bot.send_message(chat_id='270129913', text=str)
+        bot.send_message(chat_id='251780463', text=str)
+        bot.send_message(chat_id='309350089', text=str)
+        bot.send_message(chat_id='-368201757', text=str)
     def _str_(self):
         return self.firstName
