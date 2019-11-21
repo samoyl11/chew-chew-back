@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = (
-    'https://chew-chew-front.firebaseapp.com',
+    'http://al-taxi.ru',
 )
 
 ROOT_URLCONF = 'backend.urls'
